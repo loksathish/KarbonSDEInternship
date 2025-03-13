@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, jsonify
 import json
 from model import probe_model
+import os
 
 app = Flask(__name__)
 
@@ -33,5 +34,8 @@ def api_result():
     result = probe_model(data["data"])
     return jsonify(result)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
