@@ -1,0 +1,20 @@
+{
+    "data": {
+        "financials": [
+            {
+                "nature": "STANDALONE",
+                "pnl": {
+                    "lineItems": {
+                        "netRevenue": 60000000
+                    }
+                },
+                "bs": {
+                    "lineItems": {
+                        "longTermBorrowings": 5000000,
+                        "shortTermBorrowings": 2000000
+                    }
+                }
+            }
+        ]
+    }
+}
